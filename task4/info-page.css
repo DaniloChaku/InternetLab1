@@ -1,0 +1,30 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f4d03f;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  color: #784212;
+  text-align: center;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+img {
+  max-width: 20rem;
+}
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #8b4513;
+}

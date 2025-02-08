@@ -1,0 +1,30 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f4d03f;
+  margin: 0;
+  padding: 20px;
+}
+aside {
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  color: #784212;
+  text-align: center;
+}
+.map-container {
+  text-align: center;
+}
+img {
+  max-width: 30%;
+  height: auto;
+  border: 5px solid #8b4513;
+}
