@@ -1,0 +1,16 @@
+h1 {
+  color: black;
+}
+
+#p1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
+
+#p2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: olive;
+  font-size: calc(
+    1rem + 1px
+  ); /* на 1 піксель більше розміру шрифту за замовчуванням */
+}
