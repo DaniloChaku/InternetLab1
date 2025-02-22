@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<!DOCTYPE passport SYSTEM "passport.dtd">
+<?xml-stylesheet type="text/css" href="passport.css"?>
+
+<passport>
+    <made_by>
+        Made by Chaku Danylo
+    </made_by>
+
+    <personal>
+        <first_name>Ivan</first_name>
+        <last_name>Petrenko</last_name>
+        <middle_name>Ivanovic</middle_name>
+        <html xmlns="http://www.w3.org/1999/xhtml">
+            <img src="img/ivan.jpg" />
+        </html>
+        <address>Kyiv, 12 Shevchenko Street</address>
+        <id_number>1111</id_number>
+    </personal>
+
+    <personal>
+        <first_name>Hannah</first_name>
+        <last_name>Petrenko</last_name>
+        <middle_name>Olegivna</middle_name>
+        <html xmlns="http://www.w3.org/1999/xhtml">
+            <img src="img/hannah.jpg" />
+        </html>
+        <address>Kyiv, 12 Khreshchatyk Street</address>
+        <id_number>1112</id_number>
+    </personal>
+</passport>

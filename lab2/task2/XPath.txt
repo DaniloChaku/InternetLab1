@@ -1,0 +1,13 @@
+Перевірити правильність можна в консолі, ввевши $x("ваш XPath")
+
+1. /passport/personal - вибере всі елементи "personal"
+
+2. /passport/personal/first_name - вибере всі елементи "first_name" всередині "personal"
+
+3. /passport/personal[1] - вибере перший елемент "personal" (інформація про Івана)
+
+4. /passport/personal[last()] - вибере останній елемент "personal" (інформація про Ганну)
+
+5. /passport/personal[first_name='Ivan'] - вибере осіб з ім'ям "Ivan"
+
+6. //address - вибере всі елементи "address" у документі незалежно від їх розташування
