@@ -1,0 +1,35 @@
+body {
+  background-color: aliceblue;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+#keyboard {
+  text-align: center;
+  margin: auto;
+  border: 2px solid;
+
+  input {
+    background-color: antiquewhite;
+  }
+}
+
+input[type='button'] {
+  cursor: pointer;
+}
+
+.selections {
+  display: flex;
+  gap: 10px;
+}
+
+.range {
+  background-color: #ffdddd;
+}
+
+.operation {
+  background-color: #aaffaa;
+}
