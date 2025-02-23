@@ -1,0 +1,92 @@
+@namespace xforms url('http://www.w3.org/2002/xforms');
+@namespace xf url('http://www.w3.org/2002/xforms');
+
+*[class~='form-control'] {
+  display: block;
+  margin-bottom: 1.5em;
+}
+
+xforms|label,
+xf|label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+xforms|input,
+xf|input,
+xforms|textarea,
+xf|textarea,
+xforms|upload,
+xf|upload {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+xforms|textarea,
+xf|textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+xforms|alert,
+xf|alert {
+  display: none;
+  color: red;
+  font-size: 0.9em;
+  margin-top: 0.3em;
+}
+
+xforms|alert:active,
+xf|alert:active {
+  display: block;
+}
+
+*[class~='submit-button'] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 1em;
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+}
+
+*[class~='submit-button']:hover {
+  background-color: #45a049;
+}
+
+xforms|group,
+xf|group {
+  display: block;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+xforms|group > xforms|label:first-child,
+xf|group > xf|label:first-child {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+*[required='true'] > xforms|label::after,
+*[required='true'] > xf|label::after {
+  content: ' *';
+  color: red;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="styles.css" type="text/css"?>
+<xf:form xmlns:xf="http://www.w3.org/2002/xforms"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xf:model>
+        <xf:instance xmlns="">
+            <data>
+                <lastname/>
+                <firstname/>
+                <middlename/>
+                <address/>
+                <idnumber/>
+                <photo filename="" mediatype=""/>
+            </data>
+        </xf:instance>
+
+        <xf:bind nodeset="lastname" required="true()"/>
+        <xf:bind nodeset="firstname" required="true()"/>
+        <xf:bind nodeset="address" required="true()"/>
+        <xf:bind nodeset="idnumber" required="true()"/>
+        <xf:bind nodeset="photo" required="true()"/>
+
+        <xf:submission id="form1" method="post" 
+                      action="/submit" 
+                      replace="none"/>
+    </xf:model>
+
+    <xf:group appearance="full">
+        <xf:label>Паспортні дані</xf:label>
+
+        <xf:input ref="lastname" class="form-control">
+            <xf:label>Прізвище:</xf:label>
+            <xf:alert>Це поле обов'язкове</xf:alert>
+        </xf:input>
+
+        <xf:input ref="firstname" class="form-control">
+            <xf:label>Ім'я:</xf:label>
+            <xf:alert>Це поле обов'язкове</xf:alert>
+        </xf:input>
+
+        <xf:input ref="middlename" class="form-control">
+            <xf:label>По батькові:</xf:label>
+        </xf:input>
+
+        <xf:textarea ref="address" class="form-control">
+            <xf:label>Адреса:</xf:label>
+            <xf:alert>Це поле обов'язкове</xf:alert>
+        </xf:textarea>
+
+        <xf:input ref="idnumber" class="form-control">
+            <xf:label>Ідентифікаційний номер:</xf:label>
+             <xf:alert>Будь ласка, завантажте фото</xf:alert>
+        </xf:input>
+
+        <xf:upload ref="photo" class="form-control">
+            <xf:label>Фото:</xf:label>
+            <xf:filename ref="@filename"/>
+            <xf:mediatype ref="@mediatype"/>
+            <xf:alert>Будь ласка, завантажте фото</xf:alert>
+        </xf:upload>
+
+        <xf:submit submission="form1" class="submit-button">
+            <xf:label>Відправити</xf:label>
+        </xf:submit>
+    </xf:group>
+</xf:form>
