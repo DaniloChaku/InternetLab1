@@ -18,7 +18,9 @@
         <xf:bind nodeset="lastname" required="true()"/>
         <xf:bind nodeset="firstname" required="true()"/>
         <xf:bind nodeset="address" required="true()"/>
-        <xf:bind nodeset="idnumber" required="true()"/>
+        <xf:bind nodeset="idnumber" required="true()" 
+                type="xs:string" 
+                constraint="string-length(.) = 10"/>
         <xf:bind nodeset="photo" required="true()"/>
 
         <xf:submission id="form1" method="post" 
@@ -50,7 +52,7 @@
 
         <xf:input ref="idnumber" class="form-control">
             <xf:label>Ідентифікаційний номер:</xf:label>
-             <xf:alert>Будь ласка, завантажте фото</xf:alert>
+            <xf:alert>Потрібно ввести 10 цифр</xf:alert>
         </xf:input>
 
         <xf:upload ref="photo" class="form-control">
